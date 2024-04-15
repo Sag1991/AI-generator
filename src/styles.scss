@@ -1,17 +1,22 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
- 
+@import "primeicons/primeicons.css";
 
 body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  --primary-color: #9397ad !important;
+  --secondary-color: linear-gradient(to right, #865bd8, #4fa7ba) !important;
 }
 
 ::ng-deep .p-inputtext:enabled:hover {
-    border-color: #d1d5db!important;
+  border-color: #d1d5db !important;
 }
 
 ::ng-deep .p-inputtext:enabled:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }

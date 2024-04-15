@@ -1,0 +1,191 @@
+<div class="main-container">
+  <div class="primary-container">
+    <div class="first-section">
+      <div class="inner-primary-container">
+        <div class="header">Your plan - Free</div>
+        <div class="content-section">
+          <div class="text">Words</div>
+          <div class="text">900/2000 words used</div>
+        </div>
+        <div class="slider">
+          <p-slider [(ngModel)]="value" class="slider"></p-slider>
+        </div>
+        <div class="content-section">
+          <div class="text">Images</div>
+          <div class="text">10/25 images used</div>
+        </div>
+        <div>
+          <p-slider [(ngModel)]="value_one" class="slider"></p-slider>
+        </div>
+      </div>
+    </div>
+    <div class="second-section">
+      <div class="inner-secondary-container">
+        <div class="header">DASHBOARD</div>
+        <div class="content">
+          <img
+            class="border-line"
+            src="../../../assets/images/border-line.svg"
+            alt="border-line"
+          />
+          <img src="../../../assets/images/book.svg" alt="book-icon" />
+          <div class="text">Library</div>
+        </div>
+        <div class="content">
+          <img
+            class="border-line"
+            src="../../../assets/images/border-line.svg"
+            alt="border-line"
+          />
+          <img src="../../../assets/images/newspaper.svg" alt="notes" />
+          <div class="text">History</div>
+        </div>
+      </div>
+    </div>
+    <div class="third-section">
+      <div class="inner-secondary-container">
+        <div class="header">FAVOURITES</div>
+        <div class="content">
+          <img src="../../../assets/images/shock.svg" alt="shock" />
+          <div class="text">Blog Title Generator</div>
+        </div>
+        <div class="content">
+          <img src="../../../assets/images/shock.svg" alt="shock" />
+          <div class="text">1 Click Blog Post</div>
+        </div>
+      </div>
+    </div>
+    <div class="fourth-section">
+      <div class="inner-secondary-container">
+        <div class="header">TOOLS</div>
+        <div class="content" *ngFor="let item of tools_data">
+          <div class="first-content">
+            <img src="../../../assets/images/{{ item.image }}" alt="shock" />
+            <div class="text">{{ item.text }}</div>
+          </div>
+          <div class="second-content">
+            <div class="text">{{ item.number }}</div>
+            <img src="../../../assets/images/{{ item.arrow }}" alt="arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fifth-section">
+      <div class="inner-secondary-container">
+        <div class="header">CHAT</div>
+        <div class="content">
+          <img src="../../../assets/images/newspaper.svg" alt="shock" />
+          <div class="text">Chat with AI Assistant</div>
+        </div>
+      </div>
+    </div>
+    <div class="sixth-section">
+      <div class="inner-secondary-container">
+        <div class="header">IMAGE CREATION</div>
+        <div class="content">
+          <img src="../../../assets/images/book.svg" alt="book-icon" />
+          <div class="text">Create New Image</div>
+        </div>
+        <div class="content">
+          <img src="../../../assets/images/newspaper.svg" alt="notes" />
+          <div class="text">Gallery</div>
+        </div>
+      </div>
+    </div>
+    <div class="seventh-section">
+      <div class="inner-secondary-container">
+        <div class="header">1 CLICK CONTENT</div>
+        <div class="content" *ngFor="let item of click_data">
+          <div class="first-content">
+            <img src="../../../assets/images/{{ item.image }}" alt="shock" />
+            <div class="text">{{ item.text }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="eigth-section">
+      <div class="inner-secondary-container">
+        <div class="header">ACCOUNT</div>
+        <div class="content" *ngFor="let item of account_data">
+          <div class="first-content">
+            <img src="../../../assets/images/{{ item.image }}" alt="shock" />
+            <div class="text">{{ item.text }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secondary-container">
+    <div class="inner-section-first">
+      <div class="first-inner-section">
+        <div class="header-text">Library</div>
+        <div>
+          <i class="pi pi-search"></i>
+          <input type="text" pInputText />
+        </div>
+      </div>
+      <div class="second-inner-section">
+        <span>
+          <button>UPGRADE</button>
+        </span>
+        <span>
+          <img src="../../../assets/images/profile_1.svg" alt="profile" />
+        </span>
+      </div>
+    </div>
+    <div class="inner-section-second">
+      <div class="header-section">Catergories</div>
+      <div class="content">
+		
+        <div class="all-section">All</div>
+
+        <div class="image-section">
+          <img src="../../../assets/images/star.svg" alt="star-icon" />
+        </div>
+
+        <div class="sub-contents">
+          <span>
+            <img src="../../../assets/images/book.svg" alt="book" />
+          </span>
+          <span class="text">Blog Tools</span>
+        </div>
+
+        <div class="sub-contents">
+          <span>
+            <img src="../../../assets/images/book.svg" alt="book" />
+          </span>
+          <span class="text">Blog Tools</span>
+        </div>
+
+        <div class="sub-contents">
+          <span>
+            <img src="../../../assets/images/book.svg" alt="book" />
+          </span>
+          <span class="text">Blog Tools</span>
+        </div>
+
+        <div class="sub-contents">
+          <span>
+            <img src="../../../assets/images/book.svg" alt="book" />
+          </span>
+          <span class="text">Blog Tools</span>
+        </div>
+
+        <div class="sub-contents">
+          <span>
+            <img src="../../../assets/images/book.svg" alt="book" />
+          </span>
+          <span class="text">Blog Tools</span>
+        </div>
+		
+		<div class="sub-contents">
+			<span>
+			  <img src="../../../assets/images/book.svg" alt="book" />
+			</span>
+			<span class="text">Blog Tools</span>
+		</div>
+
+      </div>
+    </div>
+  </div>
+</div>
